@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+<input type="button" id="testButton" value="Click me" onclick="appearMessage()" />
+<div id="divCounter" style="display: none;">0</div>
+<p id="messageOutput"></p>
+
+<script>
+    function appearMessage(){
+        var messageOutputElement = document.getElementById("messageOutput");
+        var divCounterElement = document.getElementById("divCounter");
+        var nbClicks = parseInt(divCounterElement.innerHTML);
+        nbClicks+=1;
+        messageOutputElement.innerHTML = "You have clicked the button "+nbClicks+" times!";
+        divCounterElement.innerHTML = nbClicks;
+    }
+</script>
+
+</body>
+</html>

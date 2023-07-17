@@ -1,0 +1,13 @@
+How to create Spring Application from VSCode
+https://code.visualstudio.com/docs/java/java-spring-boot
+
+1- Do Ctrl+Shift+P
+2- Type in spring initializr
+3- Select your stuff and add dependency spring web.
+
+Note that there must not be anything else in the folder vscode. It would just fuck everything up.
+
+To start the application, you can press F5 in VSCode or you can check the Spring Dashboard section
+
+My Jenkins machine will be on port 12345
+Basic logon not recommended to get Jenkins working in setup file.
