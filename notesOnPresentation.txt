@@ -1,0 +1,7 @@
+Step 1: download vscode
+Step 2: download jdk 17 from oracle website. make sure you select the right tab.
+Step 3: open vscode and go to 'extensions' and download 'Extension pack for Java' and 'Spring Initializr Java Support' and 'Spring Boot Extension Pack'
+Step 4: git clone the project and open the project in vscode
+Step 5: (Optional) download maven if cmd fails to recognize command mvn
+Step 6: Launch the application in Spring Dashboard (the icon in VSCode)
+Step 7: Run 'mvn clean test' in the directory to launch your Selenium test.
