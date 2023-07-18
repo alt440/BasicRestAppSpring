@@ -11,3 +11,13 @@ To start the application, you can press F5 in VSCode or you can check the Spring
 
 My Jenkins machine will be on port 12345
 Basic logon not recommended to get Jenkins working in setup file.
+
+Check pour download Java 17? Je semble avoir des problemes avec Java11. OK
+Creation bashrc file dans ~/.bashrc pour mettre mes configs pour changer version java maven
+J'ai retire utilisation de JUnit4 parce que maven surefire ne voit pas les tests JUnit5 depuis la version
+2.22
+
+IDEAS OTHER CHALLENGES
+-Add multi-browser tests (tests launched in Firefox, IE, Safari, Chrome, etc.)
+-Add capture of tests https://rieckpil.de/spring-boot-functional-tests-with-selenium-and-testcontainers/ the
+link contains a code sample showing how to screenshot moment of test fail.

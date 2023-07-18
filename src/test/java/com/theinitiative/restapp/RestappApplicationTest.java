@@ -13,9 +13,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
-public class RestappApplicationTests extends BaseSeleniumTests{
+public class RestappApplicationTest extends BaseSeleniumTests{
 
-	@org.junit.Test
+	@Test
 	public void whenButtonClick_counterIncreases() {
 		driver.get("http://localhost:8080/index.html");
 		WebElement elementButton = driver.findElement(By.id("testButton"));

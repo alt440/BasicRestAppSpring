@@ -17,7 +17,7 @@ public abstract class BaseSeleniumTests {
     private static final String CHROMEDRIVER_EXE = "chromedriver.exe";
     protected WebDriver driver;
 
-    @Before
+    @BeforeEach
     public void setUp(){
         String driverFile = findFile();
         ChromeDriverService service = 
@@ -37,7 +37,7 @@ public abstract class BaseSeleniumTests {
         return url.getFile();
     }
 
-    @After
+    @AfterEach
     public void tearDown(){
         if(driver != null){
             driver.quit();
