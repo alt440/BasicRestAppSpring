@@ -7,14 +7,14 @@ pipeline {
                 bat "echo %M2_HOME%"
                 bat "echo %PATH%"
 
-                timeout(1){
+                /*timeout(1){
                      waitUntil{
                         script{
                             def returnVal = bat(script: "mvn spring-boot:run", returnStatus: true)
                             return (returnVal == 0)
                         }
                     }
-                }
+                }*/
                
                 bat "mvn -D clean test"
             }
