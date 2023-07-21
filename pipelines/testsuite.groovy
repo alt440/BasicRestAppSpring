@@ -11,6 +11,7 @@ pipeline {
                      waitUntil{
                         script{
                             def returnVal = bat(script: "mvn spring-boot:run", returnStdout: true)
+                            bat "echo ${returnVal}"
                             return (returnVal == 0)
                         }
                     }
