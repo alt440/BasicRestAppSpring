@@ -4,6 +4,8 @@ pipeline {
     stages {
         stage('Test') {
             steps {
+                bat "echo %M2_HOME%"
+                bat "echo %PATH%"
                 bat "mvn -D clean test"
             }
  
