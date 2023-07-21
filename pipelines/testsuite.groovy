@@ -6,6 +6,13 @@ pipeline {
             steps {
                 bat "echo %M2_HOME%"
                 bat "echo %PATH%"
+                
+                waitUntil(5){
+                    script{
+                        def returnVal = bat(script: "mvn spring-boot:run", returnStdout: true)
+                        return (returnVal == 0)
+                    }
+                }
                 bat "mvn -D clean test"
             }
  
