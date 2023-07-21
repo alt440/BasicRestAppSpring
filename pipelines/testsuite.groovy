@@ -15,7 +15,8 @@ pipeline {
                         }
                     }
                 }*/
-               
+                bat "set JAVA_HOME=C:\Program Files\Java\jdk-17"
+                bat "mvn spring-boot:run"
                 bat "mvn -D clean test"
             }
  
